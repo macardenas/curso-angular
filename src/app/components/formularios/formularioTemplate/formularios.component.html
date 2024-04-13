@@ -1,14 +1,15 @@
 <h1 style="text-align: center;">Formulario de template</h1>
 <div style="display: flex; align-items: center; justify-content: center; height: 100vh;">
-  <form action="" (submit)="onSubmit()">
+  <form action="" (submit)="onSubmit()"  #myForm="ngForm">
 
     <div>
       <div>Name</div>
-      <input type="text" placeholder="Name" name="name" [(ngModel)]="user.name">
+      <input type="text" placeholder="Name" name="name" [(ngModel)]="user.name" required minlength="2">
 
       @if(!user.name){
         <p style="color: red;">Name es requerido</p>
       }
+      
     </div>
   
     <div>

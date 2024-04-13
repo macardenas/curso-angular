@@ -12,7 +12,7 @@ export class EjemploestructuraDirective {
   constructor() { }
 
 
-  @Input() set appNot(condition: boolean) {
+  @Input() set estructural(condition: boolean) {
 
     if(!condition){
       this.viewContainer.createEmbeddedView(this.template);

@@ -10,7 +10,7 @@ export class Ejemplo1Directive {
 
   constructor(private renderer: Renderer2) { 
     console.log("Directive Angular :::::::::::")
-    //console.log(this.element.nativeElement.style.backgroundColor="blue")
+    //this.element.nativeElement.style.backgroundColor="green"
 
     renderer.setStyle(this.element.nativeElement,"background-color","green")
   }

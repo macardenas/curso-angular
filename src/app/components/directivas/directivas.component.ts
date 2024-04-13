@@ -6,7 +6,7 @@ import { EjemploestructuraDirective } from '../../directivas/ejemploestructura.d
 @Component({
   selector: 'app-directivas',
   standalone: true,
-  imports: [Ejemplo1Directive,CommonModule,EjemploestructuraDirective],
+  imports: [CommonModule,EjemploestructuraDirective,Ejemplo1Directive],
   templateUrl: './directivas.component.html',
   styleUrl: './directivas.component.css'
 })

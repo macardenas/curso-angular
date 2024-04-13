@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './formularios.component.css'
 })
 export class FormulariosComponent {
+
+@ViewChild('myForm') form: any;
 
 
   title = 'Template driven forms';
@@ -22,5 +24,6 @@ export class FormulariosComponent {
 
   onSubmit(){
     console.log(this.user)
+    console.log (this.form)
   }
 }

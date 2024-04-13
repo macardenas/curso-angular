@@ -1,7 +1,9 @@
-<p  [ngStyle]="{'background': isBlue ? 'blue' : 'red'}"> Soy una directiva de atributo </p>
+<h2  [ngStyle]="{'background': isBlue ? 'blue' : 'red'}"> Soy una directiva de atributo </h2>
 
-<p  appEjemplo1> Soy una directiva de atributo personalizada </p>
+<h2  appEjemplo1> Soy una directiva de atributo personalizada </h2>
 
-<p  *ngIf="Red"> Soy una directiva de estructura </p>
+<h2  *ngIf="Red"> Soy una directiva de estructura </h2>
 
-<!-- <h1 *appNot="true">True</h1><h1 *appNot="false">False</h1> -->
+
+<h2>Soy una directiva de estructura personalizada</h2>
+<h1 *estructural="true">True</h1><h1 *estructural="false">False</h1>

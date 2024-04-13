@@ -5,7 +5,7 @@ import { DirectivasComponent } from './components/directivas/directivas.componen
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ApirestComponent } from './components/apirest/apirest.component';
 import { FormulariosComponent } from './components/formularios/formularioTemplate/formularios.component';
-import { FormularioReactivoComponent } from './components/formulario/formulario-reactivo/formulario-reactivo.component';
+import { FormularioReactivoComponent } from './components/formularios/formulario-reactivo/formulario-reactivo.component';
 export const routes: Routes = [
     { path: '',title:"LogIn Page", component: DirectivasComponent },
     { path: 'languaje',title:"languaje", component: I18nComponent },

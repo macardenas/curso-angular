@@ -1,11 +1,12 @@
-import { JsonPipe, NgFor } from '@angular/common';
+import { CommonModule, JsonPipe, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { CommonEngine } from '@angular/ssr';
 
 @Component({
   selector: 'app-formulario-reactivo',
   standalone: true,
-  imports: [NgFor, ReactiveFormsModule, JsonPipe],
+  imports: [NgFor, ReactiveFormsModule, JsonPipe,CommonModule],
   templateUrl: './formulario-reactivo.component.html',
   styleUrl: './formulario-reactivo.component.css'
 })
@@ -45,7 +46,7 @@ export class FormularioReactivoComponent {
 
   onSubmit() {
     // TODO: Use EventEmitter with form value
-    console.log(this.profileForm.value);
+    console.log(this.profileForm);
   }
 
 }
