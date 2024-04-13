@@ -1,0 +1,5 @@
+{
+    "title":"Title",
+    "name": "My name is {{name}}",
+    "ButtonLanguaje": "Change language"
+}

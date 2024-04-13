@@ -1,0 +1,87 @@
+<h1>
+    Bienvenido al API REST
+</h1>
+
+
+<button (click)="GetTasaBCV()">
+    Get Tasa BCV
+</button>
+
+
+<span *ngIf="TasaBCV"> {{ TasaBCV | json }}</span>
+
+<br><br>
+
+<button (click)="GetProduct()">
+    Get Products
+</button>
+
+
+<span *ngIf="Products"> {{ Products | json }}</span>
+
+<br><br>
+
+<button (click)="PostProduct()">
+   Post Product
+</button>
+
+<span>
+    <p>Voy a insertar esto</p>
+
+    <span>
+        {{ PostProductObj | json}}
+    </span>
+</span>
+
+<br><br>
+
+
+<span *ngIf="PostProductResponse">
+    <h2>
+        Agregue esto
+    </h2>
+    
+    {{ PostProductResponse | json }}</span>
+
+<br><br>
+
+
+<div *ngIf="idProductpost">
+
+    <h2>Quieres buscar el productos que acabas de postear?</h2>
+
+    <button (click)="FoundProductAdd()">
+        Buscar
+     </button>
+     
+     <span *ngIf="ProductFound"> {{ ProductFound | json }}</span>
+
+     <br><br>
+
+    <button (click)="ACtuazizarProduct()">
+    Actualizar Product
+    </button>
+
+    <span>
+        <p>Voy a actualizar esto</p>
+
+        <span>
+            {{ ActualizarProduct | json}}
+        </span>
+    </span>
+
+    <br><br>
+
+    <button (click)="DeleteProduct()">
+    Eliminar Product
+    </button>
+
+    <span>
+
+        <span *ngIf="ProductDelete" >
+           <h3>Producto eliminado</h3>
+        </span>
+    </span>
+
+</div>
+

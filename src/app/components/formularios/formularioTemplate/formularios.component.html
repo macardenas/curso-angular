@@ -1,0 +1,40 @@
+<h1 style="text-align: center;">Formulario de template</h1>
+<div style="display: flex; align-items: center; justify-content: center; height: 100vh;">
+  <form action="" (submit)="onSubmit()">
+
+    <div>
+      <div>Name</div>
+      <input type="text" placeholder="Name" name="name" [(ngModel)]="user.name">
+
+      @if(!user.name){
+        <p style="color: red;">Name es requerido</p>
+      }
+    </div>
+  
+    <div>
+      <div>Email</div>
+      <input type="email" placeholder="Email" name="email" [(ngModel)]="user.email">
+
+      @if(!user.email){
+        <p style="color: red;">Email es requerido</p>
+      }
+    </div>
+  
+    <div>
+      <div>Password</div>
+      <input type="password" placeholder="Password" name="password" [(ngModel)]="user.password">
+
+      @if(!user.password){
+        <p style="color: red;">Password es requerido</p>
+      }
+    </div>
+    <br>
+    <button type="submit">
+      Submit
+    </button>
+    <br>
+    <br>
+    {{ user | json}}
+  </form>
+  
+</div>

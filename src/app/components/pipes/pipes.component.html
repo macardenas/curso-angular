@@ -1,0 +1,21 @@
+
+
+@for (item of DataExample; track item) {
+   <span>
+    {{  item.nombre | uppercase }} <br/>
+   </span> 
+
+   <span>
+    {{  item.fecha | date : 'short' }} <br/>
+    </span> 
+
+    <span>
+    {{  item.edad | number : '1.0-2' }} <br/>
+    </span> 
+
+    <span>
+    {{  item.colorfavorito | reverso }} <br/>
+    </span> 
+
+        
+}
